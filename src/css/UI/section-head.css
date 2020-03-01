@@ -1,0 +1,27 @@
+.section-head {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+.section-head__title {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.section-head__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #d6bd7a;
+}
+.section-head__description {
+  width: 100%;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: var(--font-size-p__description);
+}

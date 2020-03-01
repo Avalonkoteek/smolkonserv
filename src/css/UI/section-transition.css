@@ -1,0 +1,14 @@
+.section-transition {
+  object-fit: cover;
+  background-size: cover;
+  background-image: url("../../img/icons/wave-to-bottom__white.svg");
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.section-transition--top {
+  background-position: top;
+}
+.section-transition--bottom {
+}

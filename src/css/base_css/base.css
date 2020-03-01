@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: var(--font-size-p);
+}
+
+a {
+  text-decoration: none;
+  background-color: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-style: normal;
+  font-weight: 400;
+}
+h1 {
+  font-size: var(--font-size-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+}
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+ul {
+  line-height: calc(32 / 16);
+}
