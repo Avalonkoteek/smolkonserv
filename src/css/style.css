@@ -12,6 +12,10 @@
 
 @import "./UI/section-head.css";
 
+@import "./UI/background.css";
+
 @import "./header.css";
 
 @import "./production.css";
+
+@import "./our-product.css";
