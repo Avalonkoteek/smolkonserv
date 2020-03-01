@@ -24,13 +24,50 @@
 
     <!-- HEADER
     --------------------------------------------------------------------- -->
-    <header class="header">
+    <header class="header js-parallax-bg">
       <div class="section-transition"></div>
       <div class="header__inner">
         <h1>КЗ "Смоленский"</h1>
         <p>Производитель повидла, джемов и консерваций для оптовой продажи</p>
-        <button class="button">Продукция</button>
+        <a class="button"><span class="button__top-text">Продукция</span><span class="button__bottom-text">Продукция</span></a>
       </div>
     </header>
+
+    <!-- WEBSITE CONTENT
+    --------------------------------------------------------------------- -->
+    <main>
+    <!-- PRODUCTION
+    --------------------------------------------------------------------- -->
+      <section class="production">
+        <!-- BACKGROUND ------------------------------------------------- -->
+        <!-- SECTION HEAD ----------------------------------------------- -->
+        <div class="section-head">
+          <h2 class="section-head__title">Наше производство</h2>
+          <p class="section-head__description">Консервный завод Смоленский занимается производством сладкой консервации(повидло, конфетюр, ждемы), первыми обеденными блюдами и десертами. На рынке пищевой ромышленности с 1999 года</p>
+        </div>
+        <!-- SECTION BODY ----------------------------------------------- -->
+        <ul class="production__wrapper">
+          <!-- item -->
+          <li class="production-item">
+            <div class="production-item__img"></div>
+            <h3 class="production-item__title">Сладкая консервайция</h3>
+            <p class="production-item__description">Фруктго-ягодное повидло, джемы конфитюр и варенье в ассоременте, подробная информация в разделе продукия</p>
+          </li>
+           <!-- item -->
+          <li class="production-item">
+            <div class="production-item__img"></div>
+            <h3 class="production-item__title">Консервайция</h3>
+            <p class="production-item__description">Первые обеденные блюда, маринованная свекла, солянка</p>
+          </li>
+           <!-- item -->
+          <li class="production-item">
+            <div class="production-item__img"></div>
+            <h3 class="production-item__title">Десерты</h3>
+            <p class="production-item__description">Зефир, пастила, мармелад</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="./src/js/parallax.js"></script>
   </body>
 </html>

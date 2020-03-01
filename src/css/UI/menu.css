@@ -7,6 +7,20 @@
   height: 60px;
   display: flex;
   padding: 10px var(--padding);
+  position: relative;
+  display: none;
+}
+.navigation::after{
+  content: "";
+  width: 100%;
+  height: 70px;
+  bottom: -70px;
+  left: 0;
+  background-position:top; 
+  background-size: cover;
+  background: url("../../img/background/top-sweet.svg") no-repeat;
+  background-position: top;
+  position: absolute;
 }
 .nav-links {
   display: flex;

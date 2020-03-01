@@ -5,6 +5,65 @@
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+overflow: hidden;
+}
+.button span{
   text-transform: uppercase;
   font-weight: 700;
+  position: absolute;
+  transition: all 0.9s ease;
+}
+.button__bottom-text{
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+.button__top-text{
+  top:0;
+  left:50%;
+  transform: translate(-50%,-100%);
+}
+.button::after{
+content: "";
+position: absolute;
+top:-10px;
+left: 0;
+width: 100%;
+height: 40px;
+background-position: top;
+background-size: 100%;
+object-fit: cover;
+background-repeat: no-repeat;
+background-image: url("../../img/button/sweet.svg");
+transition: all 0.9s ease;
+}
+.button::before{
+  content: "";
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: translateY(-100%);
+transition: all 0.9s ease;
+background-color: #EAD396;
+}
+.button:hover::before{
+  transform: translateY(0%);
+}
+.button:hover::after{
+  transform: translateY(150%);
+}
+.button:hover .button__top-text{
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+.button:hover .button__bottom-text{
+  transform: translate(-50%,150%);
 }
