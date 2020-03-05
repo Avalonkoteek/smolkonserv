@@ -1,0 +1,25 @@
+.contact {
+  width: 100%;
+  padding: 100px var(--padding);
+  display: flex;
+}
+.contact > * {
+  flex: 1 0 500px;
+}
+.contact__title {
+  position: relative;
+  margin-bottom: 50px;
+}
+.contact__title::after {
+  content: "";
+  position: absolute;
+  width: 62px;
+  height: 1px;
+  background: #c9a74d;
+  bottom: -22px;
+  left: 0;
+}
+.contact__description {
+  color: #7c7c7c;
+  line-height: 20px;
+}

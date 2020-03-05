@@ -5,6 +5,7 @@
   --font-size-h3: 24px;
   --font-size-p__description: 20px;
   --font-size-p: 18px;
+  --section-transition-height: 50px;
 }
 @media (max-width: 1200px) {
   :root {

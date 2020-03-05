@@ -1,32 +1,105 @@
 .navigation {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  background-color: #fff;
   width: 100%;
   height: 60px;
   display: flex;
-  padding: 10px var(--padding);
-  position: relative;
-  display: none;
+  padding: 10px var(--padding) 0;
+  background-color: #fff;
+  z-index: 100;
+  align-items: stretch;
 }
-.navigation::after {
+.navigation * {
+  user-select: none;
+}
+.navigation::before {
   content: "";
+  position: absolute;
   width: 100%;
-  height: 70px;
-  bottom: -70px;
+  height: 45px;
+  transform: translateY(100%);
   left: 0;
   background-position: top;
+  bottom: 1px;
 
-  background: url("../../img/background/top-sweet.svg") no-repeat;
+  background: url("../../img/icons/TOP-WHITE.svg") no-repeat;
   background-size: cover;
   background-position: top;
   position: absolute;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  z-index: 101;
+  margin-right: 50px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
 }
 .nav-links {
   display: flex;
+  align-items: flex-end;
+  color: black;
+}
+.nav-links * {
+  color: inherit;
 }
 .nav-links__link {
   list-style: none;
+  margin-right: 30px;
+  color: black;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.nav-links__link a {
+  text-decoration: none;
+}
+.nav-links__link::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #d6bd7a;
+  left: 0;
+  bottom: 0px;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.nav-links__link:hover::after {
+  transform: translateX(0%);
+}
+.active.nav-links__link::after {
+  transform: translateX(0%);
+}
+.number-phone {
+  color: black;
+  position: absolute;
+  right: var(--padding);
+  height: calc(100% - 10px);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.number-phone::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #d6bd7a;
+  left: 0;
+  bottom: 0px;
+  transform: translateX(0%);
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
 }

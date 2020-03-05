@@ -13,7 +13,10 @@ a {
   background-color: none;
   color: #fff;
 }
-
+section {
+  position: relative;
+  overflow: hidden;
+}
 h1,
 h2,
 h3 {
@@ -31,6 +34,7 @@ h3 {
 }
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 @media (max-width: 780px) {

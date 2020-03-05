@@ -1,7 +1,7 @@
 .production {
   position: relative;
   z-index: 0;
-  padding: 130px var(--padding);
+  padding: 130px var(--padding) 0;
 }
 /* Background */
 .production__background__image {
@@ -9,6 +9,7 @@
   left: 0;
 }
 .production__wrapper {
+  width: 100%;
   position: relative;
   z-index: 1;
   display: flex;
