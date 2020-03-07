@@ -22,6 +22,10 @@
 
 @import "./containers.css";
 
+@import "./geography.css";
+
+@import "./history.css";
+
 @import "./contact.css";
 
 @import "./map.css";

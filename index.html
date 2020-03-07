@@ -254,29 +254,67 @@
         <!-- BACKGROUND ------------------------------------
         ----------------------------------------------------- -->
         <div class="background__wrapper">
-          <p class="background__text">Продукция</p>
+          <p class="background__text background__text__georaphy">Поставки</p>
         </div>
            <!-- SECTION HEAD ----------------------------------------------- -->
-           <div class="section-head">
-            <h2 class="section-head__title">В чем поставляем</h2>
+           <div class="section-head section-head__geography">
+            <h2 class="section-head__title">География распространения</h2>
             <p class="section-head__description">
-              Транспортировка нашей продукции осуществляется в специальных пищевых тарах, что позволяет защитить продукт от внешних воздействий и увеличить срок хранения. Выбор типа тары зависит от продука и договоренностей с заказчиком
+              Приглашаем к сотрудничеству оптовых заказчиков, региональных дистрибьюторов. Мы поставляем продукты по территории России, Казахстану и Республике Беларусь. По всем возникшим вопросам обращайтесь к сотруднику в поле для сообщений.
             </p>
           </div>
           <!-- SECTION BODY ----------------------------------------------- -->
-          <div class="geography__wrapper"></div>
+          <div class="geography__wrapper">
+
+          </div>
 
       </section>
 
       <!-- PARTNERS
     --------------------------------------------------------------------- -->
       <section class="partners">
-
+         <!-- SECTION HEAD ----------------------------------------------- -->
+         <div class="section-head">
+          <h2 class="section-head__title">С нами сотрудничают</h2>
+        
+          </div>
+          <div class="partners__wrapper">
+            <div class="silder"></div>
+          </div>
       </section>
 
       <!-- HISTORY
     --------------------------------------------------------------------- -->
-      <section class="history"></section>
+      <section class="history">
+        <div class="history__wrapper">
+          <div class="history__img-slide-wrapper">
+            <div class="history__img-item"><img src="./src/img/history/history1.jpg"/></div>
+            <div class="history__img-item"></div>
+            <div class="history__img-item"></div>
+          </div>
+          <div class="history__text-slide-wrapper">
+            <div class="history__text-item">
+              <h2>Наша история</h2>
+              <p>Год основания предприятия, сфера дефтельности - производство яблочного повидла</p>
+            </div>
+          </div>
+        </div>
+        <div class="history__year-field">
+          <!-- arrows -->
+          <span class="history__arrow history__arrow--left"></span>
+          <span class="history__arrow history__arrow--right"></span>
+          <!-- line -->
+          <div class="history-line">
+            <div class="history-line__year">1999</div>
+            <div class="history-line__year">1999</div>
+            <div class="history-line__year">1999</div>
+            <div class="history-line__year">1999</div>
+            <div class="history-line__indicator">
+              <span class="history-line__indicator-line"></span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- CONTACT
     --------------------------------------------------------------------- -->
@@ -286,7 +324,7 @@
   <p class="contact__description">
     Чтобы задать вопрос или узнать цену на продукцию, напишите нам на почту, позвоните или заполните форму
   </p>
-  <div>
+  <div class="contact__container">
   <div class="contact__location">
     <h3>Местоположение</h3>
     <p>Город Смоленск, район матушкино, и что-то ещё</p>
@@ -303,10 +341,10 @@
 <!-- SECTION BODY ----------------------------------------------- -->
 <div class="form">
   <form>
-    <input class="contact__input" type="text"/>
-    <input class="contact__input" type="text"/>
-    <textarea  class="contact__textarea"></textarea>
-      <button>Отправить</button>
+    <input class="contact__input" placeholder="Имя" type="text"/>
+    <input class="contact__input" placeholder="Email" type="text"/>
+    <textarea  class="contact__textarea" placeholder="Сообщение"></textarea>
+      <button class="form__sendButton">Отправить</button>
   </form>
 </div>
       </section>

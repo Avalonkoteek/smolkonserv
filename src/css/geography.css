@@ -1,0 +1,13 @@
+.geography {
+  width: 100%;
+  padding: 170px var(--padding);
+  background: url("../img/2656675.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.section-head__geography {
+  color: #fff;
+}
+.background__text__georaphy {
+  opacity: 0.05;
+}
