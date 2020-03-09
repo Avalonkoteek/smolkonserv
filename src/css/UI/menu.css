@@ -89,7 +89,7 @@
 .number-phone::after {
   content: "";
   position: absolute;
-  height: 40px;
+  height: 1px;
   width: 100%;
   background-color: #d6bd7a;
   left: 0;

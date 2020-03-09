@@ -1,7 +1,7 @@
 .button {
   width: 250px;
   height: 60px;
-  background-color: #d6bd7a;
+  background-color: #e9cc81;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -17,6 +17,8 @@
   font-weight: 700;
   position: absolute;
   transition: all 0.9s ease;
+  z-index: 4;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
 }
 .button__bottom-text {
   top: 50%;
@@ -31,17 +33,18 @@
 .button::after {
   content: "";
   position: absolute;
-  top: -10px;
+  top: 0px;
   left: 0;
   width: 100%;
-  height: 40px;
+  height: 50px;
   background-position: top;
 
-  background-image: url("../../img/button/sweet.svg");
+  background-image: url("../../img/button/sweet2.svg");
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
   transition: all 0.9s ease;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.04));
 }
 .button::before {
   content: "";
@@ -53,17 +56,18 @@
   transform: translateY(-100%);
   transition: all 0.9s ease;
   background-color: #ead396;
+  z-index: 3;
 }
 .button:hover::before {
   transform: translateY(0%);
 }
 .button:hover::after {
-  transform: translateY(150%);
+  transform: translateY(110%);
 }
-.button:hover .button__top-text {
+/* .button:hover .button__top-text {
   top: 50%;
   transform: translate(-50%, -50%);
 }
 .button:hover .button__bottom-text {
   transform: translate(-50%, 150%);
-}
+} */

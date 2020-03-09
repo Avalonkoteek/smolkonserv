@@ -89,8 +89,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  --x: -80%;
   background-color: #c9a74d;
-  transform: translateX(-60%);
+  transform: translateX(var(--x));
+  transition: all 0.4s ease;
 }
 .history-line__year {
   position: absolute;

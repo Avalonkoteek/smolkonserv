@@ -1,0 +1,35 @@
+.js-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.js-image-item {
+  position: absolute;
+  transform: translateX(100%);
+  transition: all 0.4s ease;
+}
+.js-image-item.is-selected {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.js-image-item.move-left {
+  transform: translateX(-100%);
+}
+
+.js-text-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.js-text-item {
+  position: absolute;
+  transform: translateX(100%);
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+.js-text-item.is-selected {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.js-text-item.move-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}

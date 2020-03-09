@@ -279,21 +279,45 @@
         
           </div>
           <div class="partners__wrapper">
-            <div class="silder"></div>
+            <!-- navigation -->
+            <div class="partners__direction partners__direction--left"></div>
+            <div class="partners__direction partners__direction--right"></div>
+            <div class="partners-silder">
+              <!--  -->
+              <div class="partners-silder__item"><img src="./src/img/partners/5.jpg"></div>
+              <div class="partners-silder__item"><img src="./src/img/partners/5.jpg"></div>
+              <div class="partners-silder__item"><img src="./src/img/partners/5.jpg"></div>
+              <div class="partners-silder__item"><img src="./src/img/partners/5.jpg"></div>
+              <div class="partners-silder__item"><img src="./src/img/partners/5.jpg"></div>
+              <div class="partners-silder__item"><img src="./src/img/partners/5.jpg"></div>
+            </div>
           </div>
       </section>
 
       <!-- HISTORY
     --------------------------------------------------------------------- -->
-      <section class="history">
-        <div class="history__wrapper">
-          <div class="history__img-slide-wrapper">
-            <div class="history__img-item"><img src="./src/img/history/history1.jpg"/></div>
-            <div class="history__img-item"></div>
-            <div class="history__img-item"></div>
+      <section class="history js-slider-wrapper">
+        <div class="history__wrapper ">
+          <div class="history__img-slide-wrapper js-image-wrapper">
+            <div class="history__img-item js-image-item"><img src="./src/img/history/history1.jpg"/></div>
+            <div class="history__img-item js-image-item"><img src="./src/img/history/history1.jpg"/></div>
+            <div class="history__img-item js-image-item"><img src="./src/img/history/history1.jpg"/></div>
+            <div class="history__img-item js-image-item"><img src="./src/img/history/history1.jpg"/></div>
           </div>
-          <div class="history__text-slide-wrapper">
-            <div class="history__text-item">
+          <div class="history__text-slide-wrapper js-text-wrapper">
+            <div class="history__text-item js-text-item">
+              <h2>Наша история</h2>
+              <p>Год основания предприятия, сфера дефтельности - производство яблочного повидла</p>
+            </div>
+            <div class="history__text-item js-text-item">
+              <h2>Наша история</h2>
+              <p>Год основания предприятия, сфера дефтельности - производство яблочного повидла</p>
+            </div>
+            <div class="history__text-item js-text-item">
+              <h2>Наша история</h2>
+              <p>Год основания предприятия, сфера дефтельности - производство яблочного повидла</p>
+            </div>
+            <div class="history__text-item js-text-item">
               <h2>Наша история</h2>
               <p>Год основания предприятия, сфера дефтельности - производство яблочного повидла</p>
             </div>
@@ -305,12 +329,12 @@
           <span class="history__arrow history__arrow--right"></span>
           <!-- line -->
           <div class="history-line">
-            <div class="history-line__year">1999</div>
-            <div class="history-line__year">1999</div>
-            <div class="history-line__year">1999</div>
-            <div class="history-line__year">1999</div>
+            <div class="history-line__year js-tab">1999</div>
+            <div class="history-line__year js-tab">1999</div>
+            <div class="history-line__year js-tab">1999</div>
+            <div class="history-line__year js-tab">1999</div>
             <div class="history-line__indicator">
-              <span class="history-line__indicator-line"></span>
+              <span class="history-line__indicator-line js-indicator"></span>
             </div>
           </div>
         </div>
@@ -373,7 +397,9 @@
         
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./src/js/slider.js"></script>
+    
     <script src="./src/js/parallax.js"></script>
   </body>
 </html>
