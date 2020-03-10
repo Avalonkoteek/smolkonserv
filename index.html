@@ -102,6 +102,7 @@
         <div class="background__wrapper">
           <p class="background__text">Продукция</p>
           <img src="./src/img/background/hx_menu-bg.png" alt="">
+          <img src="./src/img/background/" alt="">
         </div>
         <!-- SECTION HEAD ----------------------------------------------- -->
         <div class="section-head">
@@ -115,18 +116,18 @@
         <!-- SECTION BODY ----------------------------------------------- -->
         <div class="product">
           <!-- Navigation ----------------------------------------------- -->
-          <ul class="product-navigation">
+          <ul class="product-navigation js-product-navigation">
             
-              <li>Вся продукция</li>
-              <li>Консервация</li>
-              <li>Сладкая консервация</li>
-              <li>Сладости</li>
+              <li class="js-product-tab js-product-tab--active" data-product="all">Вся продукция</li>
+              <li class="js-product-tab" data-product="conserve">Консервация</li>
+              <li class="js-product-tab" data-product="sweet-conserve">Сладкая консервация</li>
+              <li class="js-product-tab" data-product="sweet">Сладости</li>
             
           </ul>
           <!-- Product List ----------------------------------------------- -->
-          <ul class="product__wrapper">
+          <ul class="product__wrapper js-product-wrapper">
             
-              <li class="product-item">
+              <li class="product-item" data-product="conserve">
                 <figure>
                   <img
                     alt="A rather marvellous macaw, opening one of its wings to support the cause."
@@ -144,7 +145,7 @@
                   ><span class="button__bottom-text">Подробнее</span></a
                 >
                 </li>
-                <li class="product-item">
+                <li class="product-item" data-product="sweet">
                   <figure>
                     <img
                       alt="A rather marvellous macaw, opening one of its wings to support the cause."
@@ -163,7 +164,7 @@
                   >
                   </li>
 
-                  <li class="product-item">
+                  <li class="product-item" data-product="sweet">
                     <figure>
                       <img
                         alt="A rather marvellous macaw, opening one of its wings to support the cause."
@@ -182,7 +183,7 @@
                     >
                     </li>
 
-                    <li class="product-item">
+                    <li class="product-item" data-product="sweet-conserve">
                       <figure>
                         <img
                           alt="A rather marvellous macaw, opening one of its wings to support the cause."
@@ -213,6 +214,8 @@
         ----------------------------------------------------- -->
         <div class="background__wrapper background__wrapper__containers">
           <p class="background__text background__text__containers">ТАРЫ</p>
+          <img src="./src/img/background/hx_menu-bg.png" alt="">
+          <img src="./src/img/background/hx_list--2.png" alt="">
         </div>
            <!-- SECTION HEAD ----------------------------------------------- -->
            <div class="section-head section-head__containers">
@@ -379,6 +382,9 @@
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7ab7bfcea164a203420c40728d2b8f63613b88d324882a55e04bd517a6284338&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
       </section>
     </main>
+
+     <!-- Footer
+    --------------------------------------------------------------------- -->
     <footer class="footer">
       <div class="footer__item">
         <h4 class="footer__title">Смоленск</h4>
@@ -397,9 +403,12 @@
         
       </div>
     </footer>
+
+    <!-- SCRIPTS
+      -------------------------------------------------------------------- -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./src/js/slider.js"></script>
-    
+       <script src="./src/js/product.js"></script>
     <script src="./src/js/parallax.js"></script>
   </body>
 </html>

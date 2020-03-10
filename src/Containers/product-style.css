@@ -1,0 +1,17 @@
+@import "../fonts/fonts.css";
+
+@import "../css/base_css/normalize.css";
+
+@import "../css/base_css/root.css";
+
+@import "../css/base_css/base.css";
+
+@import "../css/UI/button.css";
+
+@import "../css/UI/menu.css";
+
+@import "../css/UI/background.css";
+
+@import "./product.css";
+
+@import "../css/footer.css";

@@ -7,6 +7,11 @@
   --font-size-p: 18px;
   --section-transition-height: 50px;
 }
+@media (max-width: 1900px) {
+  :root {
+    --section-transition-height: 60px;
+  }
+}
 @media (max-width: 1200px) {
   :root {
     --padding: 80px;
@@ -15,6 +20,7 @@
     --font-size-h3: 20px;
     --font-size-p__description: 18px;
     --font-size-p: 16px;
+    --section-transition-height: 30px;
   }
 }
 @media (max-width: 786px) {
@@ -25,6 +31,7 @@
     --font-size-h3: 18px;
     --font-size-p__description: 16px;
     --font-size-p: 16px;
+    --section-transition-height: 23px;
   }
 }
 @media (max-width: 420px) {
@@ -35,5 +42,6 @@
     --font-size-h3: 18px;
     --font-size-p__description: 16px;
     --font-size-p: 16px;
+    --section-transition-height: 12px;
   }
 }

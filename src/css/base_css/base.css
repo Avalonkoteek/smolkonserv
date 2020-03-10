@@ -46,3 +46,6 @@ body {
 ul {
   line-height: calc(32 / 16);
 }
+li {
+  list-style: none;
+}
