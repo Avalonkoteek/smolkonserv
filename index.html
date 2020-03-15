@@ -14,12 +14,17 @@
         <img src="./src/img/icons/logo.svg" alt="Консервный завод 'Смоленский'" />
       </div>
       <ul class="nav-links">
-        <li class="nav-links__link active"><a href="">Главная</a></li>
-        <li class="nav-links__link"><a href="">Продукция</a></li>
-        <li class="nav-links__link"><a href="">О нас</a></li>
-        <li class="nav-links__link"><a href="">Контакты</a></li>
+        <li class="nav-links__link active"><a href="home">Главная</a></li>
+        <li class="nav-links__link"><a href="production">Продукция</a></li>
+        <li class="nav-links__link"><a href="about">О нас</a></li>
+        <li class="nav-links__link"><a href="contact">Контакты</a></li>
       </ul>
       <a class="number-phone">+79857376180</a>
+      <button class="navigation__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
 
     <!-- HEADER
@@ -42,7 +47,7 @@
 
       <!-- PRODUCTION
     --------------------------------------------------------------------- -->
-      <section class="production">
+      <section class="production" style="display: none;">
         <!-- BACKGROUND ------------------------------------------------- -->
         <div class="background__wrapper">
           <img
@@ -97,7 +102,7 @@
 
       <!-- OUR PRODUCT
     --------------------------------------------------------------------- -->
-      <section class="our-product">
+      <section class="our-product" id="production">
         <!-- BACKGROUND ------------------------------------------------- -->
         <div class="background__wrapper">
           <p class="background__text">Продукция</p>
@@ -283,9 +288,9 @@
           </div>
           <div class="partners__wrapper">
             <!-- navigation -->
-            <div class="partners__direction partners__direction--left"></div>
-            <div class="partners__direction partners__direction--right"></div>
-            <div class="partners-silder">
+            <div class="partners__direction partners__direction--left js-partnets-direction"></div>
+            <div class="partners__direction partners__direction--right js-partnets-direction"></div>
+            <div class="partners-silder js-psrtnes-slider">
               <!--  -->
               <div class="partners-silder__item"><img src="./src/img/partners/5.jpg"></div>
               <div class="partners-silder__item"><img src="./src/img/partners/5.jpg"></div>
@@ -299,7 +304,7 @@
 
       <!-- HISTORY
     --------------------------------------------------------------------- -->
-      <section class="history js-slider-wrapper">
+      <section class="history js-slider-wrapper" id="about">
         <div class="history__wrapper ">
           <div class="history__img-slide-wrapper js-image-wrapper">
             <div class="history__img-item js-image-item"><img src="./src/img/history/history1.jpg"/></div>
@@ -345,7 +350,7 @@
 
       <!-- CONTACT
     --------------------------------------------------------------------- -->
-      <section class="contact">
+      <section class="contact" id="contact">
  <div class="contact__infobox">
   <h2 class="contact__title">Связаться с нами</h2>
   <p class="contact__description">
@@ -407,7 +412,9 @@
     <!-- SCRIPTS
       -------------------------------------------------------------------- -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./src/js/menu.js"></script>
     <script src="./src/js/slider.js"></script>
+    <script src="./src/js/slider-partners.js"></script>
        <script src="./src/js/product.js"></script>
     <script src="./src/js/parallax.js"></script>
   </body>
