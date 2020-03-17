@@ -44,7 +44,7 @@ body {
 }
 
 ul {
-  line-height: calc(32 / 16);
+  line-height: 20px;
 }
 li {
   list-style: none;

@@ -32,7 +32,14 @@ navLinks.click(function(event) {
 $(window).scroll(() => {
   onScroll();
 });
+$(".js-link").click(function(event) {
+  let element = $(this).attr("href");
+  event.preventDefault();
 
+  let scrollTop = $("#" + element).offset().top;
+
+  $("html, body").animate({ scrollTop: scrollTop }, 1000);
+});
 const onScroll = () => {
   checkTabContainerPosition();
 };

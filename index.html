@@ -20,7 +20,7 @@
         <li class="nav-links__link"><a href="contact">Контакты</a></li>
       </ul>
       <a class="number-phone">+79857376180</a>
-      <button class="navigation__burger">
+      <div class="navigation__burger">
         <span></span>
         <span></span>
         <span></span>
@@ -29,12 +29,12 @@
 
     <!-- HEADER
     --------------------------------------------------------------------- -->
-    <header class="header js-parallax-bg">
+    <header class="header js-parallax-bg" id="home">
   
       <div class="header__inner">
         <h1>КЗ "Смоленский"</h1>
         <p>Производитель повидла, джемов и консерваций для оптовой продажи</p>
-        <a class="button"
+        <a class="button js-link" href="#"
           ><span class="button__top-text">Продукция</span
           ><span class="button__bottom-text">Продукция</span></a
         >
@@ -110,9 +110,9 @@
           <img src="./src/img/background/" alt="">
         </div>
         <!-- SECTION HEAD ----------------------------------------------- -->
-        <div class="section-head">
+        <div class="section-head section-head__our-product">
           <h2 class="section-head__title">Наше производство</h2>
-          <p class="section-head__description">
+          <p class="section-head__description ">
             Консервный завод Смоленский занимается производством сладкой
             консервации(повидло, конфетюр, ждемы), первыми обеденными блюдами и
             десертами. На рынке пищевой ромышленности с 1999 года
@@ -218,9 +218,9 @@
         <!-- BACKGROUND ------------------------------------
         ----------------------------------------------------- -->
         <div class="background__wrapper background__wrapper__containers">
-          <p class="background__text background__text__containers">ТАРЫ</p>
-          <img src="./src/img/background/hx_menu-bg.png" alt="">
-          <img src="./src/img/background/hx_list--2.png" alt="">
+          <p class="background__te xt background__text__containers">ТАРЫ</p>
+          <img class="background__img background__img__containers" src="./src/img/background/hx_menu-bg.png" alt="">
+          <img  class="background__img background__img__containers" src="./src/img/background/hx_list--2.png" alt="">
         </div>
            <!-- SECTION HEAD ----------------------------------------------- -->
            <div class="section-head section-head__containers">
@@ -241,15 +241,15 @@
             <li class="containers-item">
               <div class="containers-item__img"></div>
               <div class="containers-item__content">
-                <h3>Барабан 30л</h3>
-                <p>Надежная тара для реализации большого объема продукции, Плотный картон и два метталических обуха, обеспечивают трау надежной прочнлостью и легкостью.</p>
+                <h3>Пластиковое ведро</h3>
+                <p>Пластиковое ведро объемом 12 литров. Лекгое и уудобное в транспортировке, Прекрасный вариант. </p>
               </div>
             </li>
             <li class="containers-item">
               <div class="containers-item__img"></div>
               <div class="containers-item__content">
-                <h3>Барабан 30л</h3>
-                <p>Надежная тара для реализации большого объема продукции, Плотный картон и два метталических обуха, обеспечивают трау надежной прочнлостью и легкостью.</p>
+                <h3>Стеклянная банка</h3>
+                <p>Объемом 500мл, 300мл, являются необходимыми для консервированной продукции. Обеспечивают длительное хранение продукта</p>
               </div>
             </li>
           </ul>
@@ -258,25 +258,24 @@
 
       <!-- GEOGRAPHY
     --------------------------------------------------------------------- -->
-      <section class="geography">
-        <!-- BACKGROUND ------------------------------------
-        ----------------------------------------------------- -->
+      <!-- <section class="geography">
+       
         <div class="background__wrapper">
           <p class="background__text background__text__georaphy">Поставки</p>
         </div>
-           <!-- SECTION HEAD ----------------------------------------------- -->
+          
            <div class="section-head section-head__geography">
             <h2 class="section-head__title">География распространения</h2>
             <p class="section-head__description">
               Приглашаем к сотрудничеству оптовых заказчиков, региональных дистрибьюторов. Мы поставляем продукты по территории России, Казахстану и Республике Беларусь. По всем возникшим вопросам обращайтесь к сотруднику в поле для сообщений.
             </p>
           </div>
-          <!-- SECTION BODY ----------------------------------------------- -->
+       
           <div class="geography__wrapper">
 
           </div>
 
-      </section>
+      </section> -->
 
       <!-- PARTNERS
     --------------------------------------------------------------------- -->
@@ -288,8 +287,8 @@
           </div>
           <div class="partners__wrapper">
             <!-- navigation -->
-            <div class="partners__direction partners__direction--left js-partnets-direction"></div>
-            <div class="partners__direction partners__direction--right js-partnets-direction"></div>
+            <div class="partners__direction partners__direction--left js-partnets-direction"><img src="./src/img/icons/left-arrow.png" alt=""></div>
+            <div class="partners__direction partners__direction--right js-partnets-direction"><img src="./src/img/icons/right-arrow.png" alt=""></div>
             <div class="partners-silder js-psrtnes-slider">
               <!--  -->
               <div class="partners-silder__item"><img src="./src/img/partners/5.jpg"></div>
@@ -405,7 +404,9 @@
         <p class="footer__description">Производство повидла, джемов и консерваций для оптовой продажи</p>
       </div>
       <div class="footer__item">
-        
+        <a href="home" class="up-btn js-link">
+          наверх
+        </a>
       </div>
     </footer>
 

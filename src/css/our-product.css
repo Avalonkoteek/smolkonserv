@@ -5,6 +5,7 @@
   justify-content: center;
   padding: 130px var(--padding) 0;
 }
+
 .product {
   position: relative;
   z-index: 1;
@@ -17,6 +18,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 .product-navigation li {
   list-style: none;
@@ -57,6 +59,7 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   margin-bottom: 80px;
+  animation: items 2s ease;
 }
 .product-item figure {
   width: 120px;
@@ -130,12 +133,21 @@
 }
 @keyframes tab {
   0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes items {
+  0% {
     opacity: 0;
+    transform: translateY(50%);
   }
-  50% {
-    opacity: 0.5;
-  }
+
   100% {
     opacity: 1;
+    transform: translateY(0%);
   }
 }

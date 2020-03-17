@@ -5,7 +5,7 @@
   width: 100%;
   height: 80px;
   display: flex;
-  padding: 10px var(--padding) 0;
+  padding: 0 var(--padding) 0;
   background-color: #fff;
   z-index: 100;
   align-items: stretch;
@@ -30,7 +30,7 @@
   background-position: top;
   position: absolute;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  animation: waveopen 0.4s ease;
+  animation: waveopen 0.6s ease;
 }
 .navigation--top {
   position: fixed;
@@ -42,8 +42,8 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
 }
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+
   z-index: 101;
   margin-right: 50px;
 }
@@ -68,6 +68,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  cursor: pointer;
 }
 .nav-links__link a {
   text-decoration: none;
@@ -93,27 +94,23 @@
   color: black;
   position: absolute;
   right: var(--padding);
-  height: calc(100% - 10px);
+  height: 100%;
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-.number-phone::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  background-color: #d6bd7a;
-  left: 0;
-  bottom: 0px;
-  transform: translateX(0%);
-  transition: all 0.4s ease;
+.number-phone:hover {
+  color: #d6bd7a;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
+
 .navigation__burger {
   position: absolute;
   z-index: 200;
   right: var(--padding);
-  top: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   border-width: 0;
   width: 30px;
   height: 12px;
@@ -121,14 +118,14 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  background-color: #333;
+
   border: none;
   outline: none;
 }
 .navigation__burger > span {
   width: 100%;
   height: 1px;
-  background-color: #565656;
+  background-color: #555555;
 }
 @media (max-width: 800px) {
   .number-phone {
@@ -142,12 +139,26 @@
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
     width: 100%;
     left: 0;
-    background-color: #fff;
+    background: url("../../img/background/hx_list--2.png") #fafafa;
     top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
     transform: translateY(-100%);
     transition: all 0.4s ease;
+    padding: 20vh 0px;
+  }
+  .nav-links__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+  .nav-links__link::after {
+    height: 100%;
+    background-color: #efeaef;
   }
 }
 .nav-links--active {
