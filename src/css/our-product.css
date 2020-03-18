@@ -92,11 +92,14 @@
 .product-item div {
   text-align: center;
   margin: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 .product-item div p {
   color: hsl(250, 5%, 45%);
   font-weight: 400;
-
+  flex-grow: 1;
   margin: 1rem 0 3rem;
 
   position: relative;

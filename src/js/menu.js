@@ -1,7 +1,3 @@
-// 1 клик по кнопке
-// 2 изменить стили кнопки
-// открыть меню
-
 let burger = $(".navigation__burger");
 let nav = $(".nav-links");
 let navLinks = nav.children("li");
@@ -51,7 +47,21 @@ const checkTabContainerPosition = () => {
   } else {
     $(".navigation").removeClass("navigation--top");
   }
+  navLinks.each(function() {
+    let element = $(this)
+      .children("a")
+      .attr("href");
+    let scrollTop = $("#" + element).offset().top;
+
+    if ($(window).scrollTop() > scrollTop - 80) {
+      $(this).addClass("active");
+      $(this)
+        .siblings()
+        .removeClass("active");
+    }
+  });
 };
+
 function openMenu() {
   burger.addClass("burger--close");
   nav.addClass("nav-links--active");

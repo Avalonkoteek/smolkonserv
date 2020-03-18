@@ -28,7 +28,7 @@
 }
 .partners__direction {
   width: 100px;
-  background-color: #fff;
+
   position: absolute;
   top: 0;
   height: 100%;
@@ -47,11 +47,9 @@
 }
 .partners__direction--left {
   left: 0;
-  box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.1);
 }
 .partners__direction--right {
   right: 0;
-  box-shadow: -1px 0px 4px rgba(0, 0, 0, 0.1);
 }
 .partners-silder {
   height: 100%;

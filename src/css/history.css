@@ -1,6 +1,6 @@
 .history {
   width: 100%;
-  padding: 100px var(--padding);
+  padding: 180px var(--padding) 100px;
 }
 .history__wrapper {
   width: 100%;
@@ -127,4 +127,20 @@
 }
 .history-line__year:nth-of-type(4) {
   left: 80%;
+}
+@media (max-width: 630px) {
+  .history__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .history__wrapper > * {
+    width: 100%;
+  }
+  .history__wrapper > *:first-of-type {
+    display: none;
+  }
+  .history__wrapper > *:last-of-type {
+    min-height: 200px;
+    padding-left: 0;
+  }
 }

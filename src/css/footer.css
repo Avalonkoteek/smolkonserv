@@ -77,8 +77,39 @@
   cursor: pointer;
   user-select: none;
   transition: all 0.4s ease;
+  min-height: 100px;
 }
 .up-btn:hover {
   box-shadow: -4px -4px 15px rgba(30, 30, 30, 0.3),
     4px 4px 15px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1076px) {
+  .footer__item:nth-of-type(2) {
+    border-right: 1px solid #111416;
+    border-left: 1px solid #393939;
+  }
+  .footer__item:nth-of-type(3) {
+    padding-left: 0;
+  }
+}
+@media (max-width: 696px) {
+  .footer__item:nth-of-type(2) {
+    border-right: 1px solid #111416;
+    border-left: 1px solid #111416;
+    order: 0;
+  }
+  .footer__item:nth-of-type(1) {
+    order: 1;
+    text-align: center;
+  }
+  .footer__item:first-of-type .footer__title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer__item:first-of-type .footer__title {
+    text-align: center;
+  }
+  .footer__item:nth-of-type(3) {
+    order: 2;
+  }
 }
