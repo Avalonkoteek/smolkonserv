@@ -4,6 +4,9 @@ let productItems = productWrapper.children("li");
 let productNavigation = $(".js-product-navigation");
 let productTab = $(".js-product-tab");
 
+
+elem.addEventListener("click", handler1);
+
 productTab.on("click", function() {
   const tabType = $(this).data("product");
 
